@@ -16,7 +16,6 @@ html, body {
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
 }
 
 #game #sky {
@@ -24,6 +23,7 @@ html, body {
     height: 80%;
     background: url("../img/bg.png");
     background-size: cover;
+    position: relative;
 }
 
 #game #sky #flappy {
@@ -36,6 +36,21 @@ html, body {
 #game #sky #pipe_container {
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+
+#game #sky #pipe_container .pipe {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#game #sky #pipe_container .pipe_top {
+    background-image: url("../img/pipe_top.png");
+}
+
+#game #sky #pipe_container .pipe_bot {
+    background-image: url("../img/pipe_bot.png");
 }
 
 #game #land {
