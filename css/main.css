@@ -30,6 +30,7 @@ html, body {
     position: absolute;
     width: 50px;
     height: auto;
+    transition: top 100ms, left 100ms;
 }
 
 #game #sky #pipe_container {
