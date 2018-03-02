@@ -41,16 +41,15 @@ html, body {
 
 #game #sky #pipe_container .pipe {
     position: absolute;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    width: 80px;
+    height: 200px;
+    overflow: hidden;
 }
 
-#game #sky #pipe_container .pipe_top {
-    background-image: url("../img/pipe_top.png");
-}
-
-#game #sky #pipe_container .pipe_bot {
-    background-image: url("../img/pipe_bot.png");
+#game #sky #pipe_container img {
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 #game #land {
@@ -68,5 +67,33 @@ html, body {
 @keyframes bgFlow {
     0% {background-position: 0px 0px;}
     100%{background-position: -1000000px 0px;}
+}
+
+#game #replay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:  black;
+    background-color: lightskyblue;
+    padding: 40px;
+    border: 1px solid rgb(8, 239, 255);
+    box-shadow: 4px 4px 2px lightgray;
+}
+
+#game #replay p {
+    font-size: 40px;
+}
+
+#game #pass_count {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
 

@@ -16,7 +16,15 @@
             <div id="pipe_container"></div>
         </div>
         <div id="land" class="land_flow"></div>
+        <div id="replay" >
+            <p>다시하기</p>  
+            <i onclick="replayGame()" ontouchstart="replayGame()" class="fas fa-redo fa-3x"></i>
+        </div>
+        <div id="pass_count">0</div>
     </div>
-    <script src="js/app.js"></script>
+    <!-- audio -->
+    <audio id="sound_gameover" src="sound/gameover.wav"></audio>
+    <!-- js -->
+    <script src="js/app.js"></script>    
 </body>
 </html>
